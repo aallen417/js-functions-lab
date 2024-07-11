@@ -189,16 +189,16 @@ Complete the exercise in the space below:
 */
 
 const basicCalculator = (numA, numB, operation) => {
-    if (operation === "add") {
+    if (numB === 0 && operation === "divide") {
+        return ("Error")
+    } else if (operation === "add") {
         return (numA + numB)
     } else if (operation === "subtract") {
         return (numA - numB)
     } else if (operation === "multiply") {
         return (numA * numB)
     } else if (operation === "divide") {
-        if (numB === 0) {
-            return ("Error")
-      } return (numA / numB)
+        return (numA / numB)
     } 
 }
 
